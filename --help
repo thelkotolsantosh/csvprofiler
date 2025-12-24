@@ -1,0 +1,18 @@
+usage: csvprofiler profile [-h] [--delimiter DELIMITER] [--sample SAMPLE]
+                           [--outliers {iqr,zscore}] [--security]
+                           [--health-score] [-o OUTPUT]
+                           file
+
+positional arguments:
+  file                  Path to the CSV file
+
+optional arguments:
+  -h, --help            Show this help message and exit
+  --delimiter DELIMITER CSV delimiter (default: ,)
+  --sample SAMPLE       Read only first N rows (for large files)
+  --outliers {iqr,zscore}
+                        Outlier detection method
+  --security            Enable PII and security scanning
+  --health-score        Calculate overall dataset health score
+  -o OUTPUT, --output OUTPUT
+                        Output file (.json or .html)
